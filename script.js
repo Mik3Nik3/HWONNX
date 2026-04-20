@@ -12,7 +12,7 @@ async function predict() {
         // Log to console so we can track progress
         console.log("Attempting to load model...");
         
-        const session = await ort.InferenceSession.create('./gold_rate_model.onnx');
+        const session = await ort.InferenceSession.create('./gold_rate_model.onnx.data');
         
         console.log("Model loaded successfully!");
 
