@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gold Price Predictor DNN</title>
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding-top: 50px; }
+        input { padding: 10px; margin: 10px; }
+        button { padding: 10px 20px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Gold Price Predictor (DNN)</h1>
+    <p>Enter a year (e.g., 2025) to predict the USD gold rate:</p>
+    <input type="number" id="yearInput" value="2023">
+    <button onclick="predict()">Predict Price</button>
+    <h2 id="result"></h2>
+
+    <script src="script.js"></script>
+</body>
+</html>
